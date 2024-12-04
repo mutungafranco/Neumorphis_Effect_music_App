@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphism Effect App</title>
+    <style>
+        /* General styles for the page */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e0e5ec;
+        }
+
+        /* The container holding the phone */
+        .the-frame {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: #e0e5ec; /* Light background for neumorphism */
+        }
+
+        /* Phone container styling */
+        .phone {
+            width: 320px;
+            height: 560px;
+            border-radius: 30px;
+            background: #e0e5ec;
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.7);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Neumorphic styling for iframe */
+        .phone_3df {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.7);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="the-frame">
+        <div class="phone">
+            <iframe src="index.html" class="phone_3df"></iframe>
+        </div>
+    </div>
+</body>
+</html>

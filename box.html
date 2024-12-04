@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <style>
+        /* Example styling */
+        .the-frame {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height of the viewport */
+            background-color: #f0f0f0;
+        }
+
+        .phone {
+            width: 320px; /* Adjust width of phone container */
+            height: 480px; /* Adjust height of phone container */
+            border: 10px solid #333;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .phone_3df {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="the-frame">
+        <div class="phone">
+            <iframe src="index.html" class="phone_3df"></iframe>
+        </div>
+    </div>
+</body>
+</html>
